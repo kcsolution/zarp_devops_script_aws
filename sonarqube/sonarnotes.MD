@@ -5,6 +5,11 @@
 docker-compose up -d
 ```
 
+#### Caso exiba um alerta de memoria virtual
+```
+sysctl -w vm.max_map_count=262144
+```
+
 # Pós instalacao
 - gerar token
 - instalar plugins sonar no jenkins
