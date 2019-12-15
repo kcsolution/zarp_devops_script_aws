@@ -1,6 +1,8 @@
 # Docker/Jenkins
 
-## EM ANDAMENTO ...
+#### PIPELINE EM ANDAMENTO ...
+
+![alt text](images/jenkins_pipeline.png "pipeline desenvolvido até o momento.")
 
 #### Repositorio utilizado para guardar os arquivos de configuracao da esteira devops da ZARP
 
