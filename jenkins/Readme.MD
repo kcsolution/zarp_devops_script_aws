@@ -1,27 +1,26 @@
-# JENKINS INSTALATION
+# INSTALACAO JENKINS
 
-##  Passo a passo da instalação
+## Iniciando
 
-#### First, add the repository key to the system:
-
+## Passo 1 - Acessar o diretorio onde foi baixado os scripts do jenkins.
 ```
-wget -q -O - https://pkg.jenkins.io/debian/jenkins.io.key | sudo apt-key add -
-```
-
-#### When the key is added, the system will return OK. Next, append the Debian package repository address to the server’s sources.list:
-
-```
-sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+cd diretorio-onde-versionou-esse-projeto/jenkins
 ```
 
-#### When both of these are in place, run update so that apt will use the new repository:
+#### Passo 2 - Adicionar permissão para execução dos scripts
+```
+chmod +x *.sh
+```
+
+#### Passo 3 - Executar o script 00-setting-up-jenkins-environment.sh
 
 ```
-sudo apt update
+yes | sudo ./00-setting-up-jenkins-environment.sh 
 ```
 
-#### Finally, install Jenkins and its dependencies:
-
+#### Passo 4 - Configurando o JENKINS
 ```
-sudo apt install jenkins
+Após a conclusão, seu jenkins deve estar instalado e com os principais plugins adicionados..
+
+Siga o passo a passo acessando http://JENKINS_SERVER:8080 para configurar o ambiente JENKINS.
 ```
