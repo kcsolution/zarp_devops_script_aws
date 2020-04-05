@@ -3,6 +3,7 @@ reset=`tput sgr0`
 
 echo "${yellow}Inicio remover instalacoes antigas do git ...${reset}\n"
     sudo apt-get remove git
+    sudo apt autoremove git
     sudo apt-get remove --auto-remove git
 
 echo "\n${yellow}Fim instalacoes antigas do git ...${reset}\n"

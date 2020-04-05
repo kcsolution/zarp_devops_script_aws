@@ -3,12 +3,13 @@ reset=`tput sgr0`
 
 echo  "\n${yellow}Removendo versoes antigas do Java ...${reset}"
 
-sudo apt-get remove default-jre
-sudo apt-get remove --auto-remove default-jre
+    sudo apt-get remove default-jre
+    sudo apt autoremove default-jre
+    sudo apt-get remove --auto-remove default-jre
 
 echo  "\n${yellow}Inicio instalacao Java ...${reset}"
 
-    sudo apt update
+    sudo apt update    
     sudo apt install default-jre
 
 echo "\n"
@@ -18,6 +19,7 @@ echo "\n"
 echo  "\n${yellow}Removendo versoes antigas do Jenkins ...${reset}"
 
     sudo apt-get remove jenkins
+    sudo apt autoremove jenkins
     sudo apt-get remove --auto-remove jenkins
 
 echo  "\n${yellow}Inicio instalacao Jenkins ...${reset}"

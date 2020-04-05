@@ -21,7 +21,9 @@ pipeline-utility-steps
 scm-api
 run-condition
 ssh-credentials-plugin
-ssh-slaves-plugin
+ssh
+ssh-agent
+ssh-slaves
 xunit
 ws-cleanup
 build-timestamp
