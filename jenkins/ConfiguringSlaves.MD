@@ -55,3 +55,6 @@ Esse arquivo .bat irá ser executado sempre que o windows startar, dessa forma, 
 
 ```
 
+# Importante
+
+#### Necessário instalar GIT na maquina slave
