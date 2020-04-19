@@ -21,6 +21,4 @@ echo "\n${yellow}Inicio docker compose docker-compose.yml${reset}"
 
 echo "\n${yellow}Fim  docker compose docker-compose.yml${reset}"
 
-    sudo ./01-versions.sh
-
-echo "\n${yellow}Acesse o sonar em http://SEU_SERVER_SONAR:9000${reset}"
+echo "\n\n${yellow}Acesse o sonar em http://SEU_SERVER_SONAR:9000${reset}"
