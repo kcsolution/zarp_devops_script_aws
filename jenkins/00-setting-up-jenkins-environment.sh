@@ -11,19 +11,20 @@ echo  "\n${yellow}Inicio step-02-install-jenkins-sh${reset}"
     sudo ./02-install-jenkins.sh
 
 echo  "\n${yellow}Fim step-02-install-jenkins-sh${reset}"
-echo  "\n${yellow}Inicio step-03-install-curl-and-python.sh${reset}"
+echo  "\n${yellow}Inicio step-03-install curl and python${reset}"
 
-    sudo ./03-install-curl-and-python.sh
+    sudo ../general/install-curl.sh
+    sudo ../general/install-python.sh
 
-echo  "\n${yellow}Fim step-03-install-curl-and-python.sh${reset}"
+echo  "\n${yellow}Fim step3 -install curl and python${reset}"
 echo  "\n${yellow}Inicio step-04-jenkins-plugins-batch-install.sh${reset}"
 
     sudo ./04-jenkins-plugins-batch-install.sh -p ./05-jenkins-plugins-list.sh --plugindir /var/lib/jenkins/plugins
 
 echo  "\n${yellow}Fim step-04-jenkins-plugins-batch-install.sh${reset}"
-echo  "\n${yellow}Inicio step-06-uninstall0python${reset}"
+echo  "\n${yellow}Inicio step-06-uninstall-python${reset}"
 
-    sudo ./06-uninstall-python.sh
+    sudo ../general/uninstall-python.sh
 
 echo "${yellow}\nFim 06-uninstall0python ...${reset}\n"
 echo  "\n${yellow}Inicio docker \ 01-install-docker${reset}"

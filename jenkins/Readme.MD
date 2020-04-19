@@ -15,7 +15,7 @@ chmod +x *.sh
 ##### Passo 3 - Executar o script 00-setting-up-jenkins-environment.sh
 
 ```
-yes | sudo ./00-setting-up-jenkins-environment.sh 
+yes | sudo ./00-setting-up-jenkins-environment.sh
 ```
 
 ##### Passo 4 - Configurando o JENKINS
