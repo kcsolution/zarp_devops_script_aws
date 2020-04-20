@@ -1,24 +1,9 @@
-yellow=`tput setaf 3`
-reset=`tput sgr0`
+sudo ../general/install-java.sh
 
-echo  "\n${yellow}Inicio install docker-compose${reset}"
-    
-    sudo ../docker/02-install-docker-compose.sh
+sudo ./01-install-postgres.sh
 
-echo  "\n${yellow}Fim install docker-compose${reset}"
+# sudo ./02-configure-postgres.sh
 
-echo  "\n${yellow}Inicio install docker${reset}"
-    
-    sudo ../docker/01-install-docker.sh
+# sudo ./03-install-sonar.sh
 
-echo  "\n${yellow}Fim install docker${reset}"
-
-echo "\n${yellow}Inicio docker compose docker-compose.yml${reset}"
-
-    #sudo sysctl -w vm.max_map_count=262144
-
-    sudo docker-compose up -d
-
-echo "\n${yellow}Fim  docker compose docker-compose.yml${reset}"
-
-echo "\n\n${yellow}Acesse o sonar em http://SEU_SERVER_SONAR:9000${reset}"
+# seguir os passos localizados no Readme.MD para continuar a cofiguração do ambiente SONAR
