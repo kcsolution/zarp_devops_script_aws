@@ -1,50 +1,36 @@
 # SONARQUBE
 
-#### Configurando o ambiente sonar
-
-## Passo 1 - Seguir os steps abaixo
-
-- baixar os arquivos deste repositorio
-- navegar até o diretorio sonarqube
-
-##### Passo 2 - Adicionar permissão para execução dos scripts
 ```
-chmod +x *.sh
+O ambiente SonarQube é composto de
 ```
 
-##### Passo 3 - Executar o script 00-install-sonarqube.sh
+- docker
+- docker-compose
+- sonar
+- postgresSql
+
+#### Iniciando o ambiente SonarQube
+
+Para startar o ambiente sonarqube é necessário:
+
+- baixar os scripts contidos nesse repositorio
+- navegar via terminal até o diretorio sonarqube
+- adicionar permissão de execução para os scripts ( chmod +x *.sh )
+- executar o comando abaixo:
 
 ```
 yes | sudo ./00-install-sonarqube.sh
 ```
 
-#### Passo 4 - Configurar postgress
+#### Para testar é necessário navegar até 'http://SONARQUBE_SERVER:9000'
 
-```
-    sudo -u postgres psql postgres
-    sudo createuser sonar
-    sudo psql
+# Pós instalacao
+- gerar token
+- instalar plugins sonar no jenkins
+- atribuir token ao jenkins ( globaltools adicionar sonar token )
+- configurar webhook no sonar apontando para o jenknis ( ip interno AWS )
 
-    ALTER USER sonar WITH ENCRYPTED password 'password';
-    CREATE DATABASE sonar OWNER sonar;
-
-    #exit sudo su
-```
-
-#### Passo 5 - INSTALAR SONAR
-
-```
-yes | sudo ./03-install-sonar.sh
-```
-
-#### Passo 6 - Configurar SONAR
-
-```
-sudo nano /opt/sonarqube/bin/linux-x86-64/sonar.sh
-```
-
-- Alterar:
-
-```
-RUN_AS_USER=sonar
-```
+## Importante 
+- O sonar usa banco de dados. 
+- O compose neste diretorio utiliza postgres e volumes para realizar o backup.
+- Estudar melhor forma de controlar/gerenciar o backup do sonar
