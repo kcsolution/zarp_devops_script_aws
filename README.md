@@ -2,7 +2,7 @@
 
 #### PIPELINE CONSTRUÇÃO ...
 
-![alt text](images/jenkins_pipeline.png "pipeline desenvolvido até o momento.")
+![alt text](imagens/jenkins_pipeline.png "pipeline desenvolvido até o momento.")
 
 #### Repositorio utilizado para guardar os arquivos de configuracao da esteira devops da ZARP
 
