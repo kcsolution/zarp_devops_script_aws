@@ -1,7 +1,7 @@
 yellow=`tput setaf 3`
 reset=`tput sgr0`
 
-    sudo ../general/install-java.sh
+    sudo ../comum/install-java.sh
 
 echo "\n"
 java --version
