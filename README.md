@@ -26,7 +26,9 @@
 
 #### O QUE FALTA
 
-- Dockerizar o artefato
+- Configurar smpt no Jenkins ( por enquanto enviando para mailtrap.io)
+- Configurar integração entre Jenkins e GoogleChat para envio de mensagens de quebra de build, etc ...
+- Dockerizar o artefato gerado no build do passo anterior
 - Gerar imagem e publicar no Sonar Registry
 - Poc Pipeline Continuos Delivery
 
