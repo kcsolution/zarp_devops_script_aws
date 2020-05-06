@@ -25,8 +25,7 @@ yes | sudo ./00-install-sonarqube.sh
 #### Para testar é necessário navegar até 'http://SONARQUBE_SERVER:9000'
 
 # Pós instalacao
-- gerar token
-- instalar plugins sonar no jenkins
+- gerar token (sonarqube admin)
 - atribuir token ao jenkins ( globaltools adicionar sonar token )
 - configurar webhook no sonar apontando para o jenknis ( ip interno AWS )
 
